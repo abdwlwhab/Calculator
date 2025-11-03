@@ -1,0 +1,108 @@
+body{
+   display: flex;
+  justify-content: center; /* توسيط أفقي */
+  align-items: center;     /* توسيط عمودي */
+  height: 100vh;  
+  background-color: rgb(153, 0, 255);
+  flex-direction: column;
+    
+   
+}
+
+.calculator{
+    background-color: rgb(131, 131, 148);
+    margin-top: 100px;
+    min-width: 300px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    max-width: 500px;
+    gap: 20px;
+    height: auto;
+    
+}
+
+.display {
+    background-color: #CBEFE3;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px;
+  
+    
+    
+}
+
+.button {
+    border-radius: 25%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+.del {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.row{
+    display: flex;
+    background-color: rgb(131, 131, 148);
+    justify-content:space-between ;
+    gap: 30px;
+    padding: 15px;
+}
+.title {
+    padding: 15px;
+  font-family: "Great Vibes", cursive; /* خط مشبك أنيق وواضح */
+  font-weight: 600;
+  font-size: 5.6em;
+  text-align:center;
+  letter-spacing: 1px;
+
+  /* تدرّج ألوان زاهي ومتحرك */
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7a00,
+    #ffee00,
+    #00ff6a,
+    #00c3ff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  background-size: 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* حركة التدرّج واللمعة */
+  animation: rgbFlow 5s ease-in-out infinite, glowPulse 1.5s ease-in-out infinite;
+  text-shadow: 0 0 15px rgba(255,255,255,0.6), 0 0 30px rgba(255,255,255,0.3);
+}
+
+@keyframes rgbFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 15px rgba(255,255,255,0.7), 0 0 35px rgba(255,255,255,0.4); }
+  50% { text-shadow: 0 0 30px rgba(255,255,255,1), 0 0 55px rgba(255,255,255,0.8); }
+}
