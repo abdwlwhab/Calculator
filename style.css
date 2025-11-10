@@ -25,13 +25,20 @@ body{
 .display {
     background-color: #CBEFE3;
     border-radius: 25px;
-    padding: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 300px;
+    height: 75px;
+    padding: 10px;
+    margin: 30px 50px;
+    box-sizing: border-box;
     overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
 
+    /* إضافات لشاشة آلة حاسبة */
+    text-align: right;        /* النص من اليمين */
+    font-size: 2rem;          /* حجم النص كبير وواضح */
+    line-height: 50px;        /* لتوسيط النص عموديًا */
+    white-space: nowrap;      /* منع التفاف النص */
+    text-overflow: ellipsis;  /* عرض ... للنص الطويل */
+    font-family: 'Arial', sans-serif;
 }
 
 .buttons {
